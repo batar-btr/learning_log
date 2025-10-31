@@ -1,6 +1,20 @@
-<p>
-  <a href="{% url 'learning_logs:index' %}">Learning Log</a> -
-  <a href="{% url 'learning_logs:topics' %}">Topics</a>
-</p>
-
-{% block content %}{% endblock content %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Test CSS</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'learning_logs/css/style.css' %}" />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    /> -->
+  </head>
+  <body>
+    <p>
+      <a href="{% url 'learning_logs:index' %}">Learning Log</a> -
+      <a href="{% url 'learning_logs:topics' %}">Topics</a>
+    </p>
+    {% block content %}{% endblock content %}
+  </body>
+</html>
