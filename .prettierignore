@@ -1,0 +1,4 @@
+# Ignore Django templates
+**/templates/**/*.html
+
+# Still format JS, CSS, etc.
