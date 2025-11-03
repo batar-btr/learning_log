@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-ty-g0t$2uo-xqvbmi64em)yjxd#w)e$_ji@!lkmtpv&w@jd_z6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.0.104', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -34,6 +34,9 @@ INSTALLED_APPS = [
     # My apps.
     'learning_logs',
     'accounts',
+
+    # Third party apps.
+    'django_bootstrap5',
 
     # Default Django Apps.
     'django.contrib.admin',
